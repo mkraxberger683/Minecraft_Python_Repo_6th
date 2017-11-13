@@ -1,4 +1,5 @@
 from mcpi.minecraft import Minecraft
 mc = Minecraft.create()
-message = "Saucy Bois in the home"
+message = input("Sauci Bois in your humble abode: ")
 mc.postToChat(message)
+

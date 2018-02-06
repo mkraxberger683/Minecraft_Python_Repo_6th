@@ -1,7 +1,7 @@
 from mcpi.minecraft import Minecraft
 mc = Minecraft.create()
 
-places = {'Beach': (-20.0, 1.0, -9.0), 'Forest': (0.0, 11.0, 6.0), 'Snow': (-46.0, 4.0, 98.0)}
+places = {'place1': (-30.0, 1.0, -10.0), 'place2': (0.0, 30.0, 6.0), 'place3': (-50.0, 4.0, 75.0)}
 
 choice = ""
 

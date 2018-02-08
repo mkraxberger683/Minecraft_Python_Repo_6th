@@ -12,13 +12,16 @@ pos = mc.player.getTilePos()
 x, y, z = pos.x, pos.y, pos.z
 
 brokenWall = []
-height, width = 5, 10
 
 for wall in range(10):
-    thing = brokenWall
     brokenWall.append([])
     for inner in range(10):
-        brokenWall[wall].append(thing)
+        brokenWall[wall].append(brokenBlock())
+print(brokenWall)
+
 for row in brokenWall:
-    for blocks in range(10):
-        mc.setBlocks(x, y, z)
+    for blocks in row:
+       mc.setBlock(x, y, z, blocks)
+       x += 1
+    y += 1
+    x = pos.x
